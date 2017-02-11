@@ -1,0 +1,13 @@
+<h1>List of all books</h1>
+<% @books.each do |book| %>
+  <p>
+    Title: <%= book.title %><br />
+    Author: <%= book.author %><br />
+    Already read: 
+    <% if book.already_read %>
+      Yes <br />
+    <% else %>
+      No <br />
+    <% end %>
+  </p>
+<% end %>
