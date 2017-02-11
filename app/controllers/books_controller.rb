@@ -5,7 +5,7 @@ class BooksController < ApplicationController
 
     respond_to do |format|
       format.html
-      # format.text
+      format.text
       # format.json do
       #   formatted_data = @books.map do |book|
       #     {
